@@ -48,11 +48,19 @@ h2 {
 h3 {
     text-transform: uppercase;
     font-size: 40px;
-    margin: 66px 0 18px 0;
 }
 
 h4 {
     text-transform: uppercase;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 /*---------------------- Components ----------------------*/
@@ -98,12 +106,8 @@ h4 {
 .hero p, .hero a {
     font-size: 24px;
     color: var(--couleur-blanc);
-    text-decoration: none;
 }
 
-.hero a:hover {
-    text-decoration: underline;
-}
 
 .hero::after {
     content: "";
@@ -122,6 +126,7 @@ h4 {
 .interet {
     background: url("../images/bg-interet.jpg") 100% no-repeat fixed;
 }
+
 .interet .conteneur {
     display: flex;
     flex-direction: column;
@@ -130,6 +135,10 @@ h4 {
 
 .interet p {
     text-align: center;
+}
+
+.interet h3 {
+    margin: 66px 0 18px 0;
 }
 
 .cartes {
@@ -152,6 +161,40 @@ h4 {
 
 .carte img {
     width: 151px;
+}
+
+/* citation */
+.citation {
+    background: url("../images/bg-citation.jpg") 0 50%/100% no-repeat fixed;
+    height: 404px;
+}
+
+.citation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.citation p {
+    color: white;
+}
+
+.citation h3 {
+    color: white;
+    margin: 0;
+}
+
+/* footer */
+
+.footer-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 144px;
+    background: var(--couleur-noir);
+    color: var(--couleur-blanc);
 }
 /*---------------------- Utilities ----------------------*/
 
